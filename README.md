@@ -71,7 +71,7 @@ Inspects TLS Client Hello packets and Server Name Indication (SNI) information.
 Examines DNS queries, responses, requested domain names, and returned IP addresses.
 
 ### 8. LLMNR and WPAD Queries
-**Evidence:** `07-LLMNR-WPAD-Queries.png`
+**Evidence:** `08-LLMNR-WPAD-Queries.png`
 
 Examines LLMNR name-resolution requests and WPAD-related network traffic.
 
