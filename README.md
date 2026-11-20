@@ -41,77 +41,84 @@ This project contains eight selected screenshots documenting practical network t
 
 ### 1. TCP Scan Patterns
 
-**Evidence:** `01-Nmap-TCP-Scan-Patterns.png`
+**Evidence:** `evidence/01-Nmap-TCP-Scan-Patterns.png`
 
-![TCP Scan Patterns](01-Nmap-TCP-Scan-Patterns.png)
+![TCP Scan Patterns](evidence/01-Nmap-TCP-Scan-Patterns.png)
 
 **Analysis:**
+
 Examines TCP scanning patterns and packet behavior to understand how network reconnaissance can identify accessible services.
 
 **Security relevance:** TCP scanning analysis helps SOC analysts recognize potential reconnaissance activity.
 
 ### 2. UDP Port Unreachable
 
-**Evidence:** `02-Nmap-UDP-Port-Unreachable.png`
+**Evidence:** `evidence/02-Nmap-UDP-Port-Unreachable.png`
 
-![UDP Port Unreachable](02-Nmap-UDP-Port-Unreachable.png)
+![UDP Port Unreachable](evidence/02-Nmap-UDP-Port-Unreachable.png)
 
 **Analysis:**
+
 Examines UDP traffic and ICMP Port Unreachable responses.
 
 **Security relevance:** ICMP responses can help identify closed UDP ports and understand network service availability.
 
 ### 3. ARP Duplicate IP / Spoofing Indicators
 
-**Evidence:** `03-ARP-Duplicate-IP-Spoofing.png`
+**Evidence:** `evidence/03-ARP-Duplicate-IP-Spoofing.png`
 
-![ARP Duplicate IP Spoofing](03-ARP-Duplicate-IP-Spoofing.png)
+![ARP Duplicate IP Spoofing](evidence/03-ARP-Duplicate-IP-Spoofing.png)
 
 **Analysis:**
+
 Examines ARP traffic to identify potential duplicate IP addresses or unusual address-resolution behavior.
 
 **Security relevance:** Unusual ARP activity may indicate IP conflicts or possible ARP spoofing. Further investigation is required before confirming an attack.
 
 ### 4. HTTP POST Sensitive Data Exposure
 
-**Evidence:** `04-HTTP-POST-Sensitive-Data-Exposure.png`
+**Evidence:** `evidence/04-HTTP-POST-Sensitive-Data-Exposure.png`
 
-![HTTP POST Analysis](04-HTTP-POST-Sensitive-Data-Exposure.png)
+![HTTP POST Analysis](evidence/04-HTTP-POST-Sensitive-Data-Exposure.png)
 
 **Analysis:**
+
 Inspects HTTP POST requests and examines the potential exposure of information transmitted through HTTP.
 
 **Security relevance:** Unencrypted HTTP traffic may expose sensitive information to anyone capable of monitoring the network.
 
 ### 5. HTTP 200 OK Server Response
 
-**Evidence:** `05-HTTP-200-OK-Server-Response.png`
+**Evidence:** `evidence/05-HTTP-200-OK-Server-Response.png`
 
-![HTTP 200 OK Response](05-HTTP-200-OK-Server-Response.png)
+![HTTP 200 OK Response](evidence/05-HTTP-200-OK-Server-Response.png)
 
 **Analysis:**
+
 Examines HTTP server responses, including the HTTP 200 OK status code.
 
 **Security relevance:** Understanding HTTP responses helps analysts investigate web communication and identify unexpected server behavior.
 
 ### 6. HTTPS TLS Client Hello and SNI
 
-**Evidence:** `06-HTTPS-TLS-Client-Hello-SNI.png`
+**Evidence:** `evidence/06-HTTPS-TLS-Client-Hello-SNI.png`
 
-![HTTPS TLS Client Hello SNI](06-HTTPS-TLS-Client-Hello-SNI.png)
+![HTTPS TLS Client Hello SNI](evidence/06-HTTPS-TLS-Client-Hello-SNI.png)
 
 **Analysis:**
+
 Inspects TLS Client Hello packets and Server Name Indication (SNI) information.
 
 **Security relevance:** TLS handshake inspection helps analysts understand encrypted connection establishment and identify the requested hostname when SNI is available.
 
 ### 7. DNS Query and Response Analysis
 
-**Evidence:** `07-DNS-Query-Response-Analysis.png`
+**Evidence:** `evidence/07-DNS-Query-Response-Analysis.png`
 
-![DNS Query Response Analysis](07-DNS-Query-Response-Analysis.png)
+![DNS Query Response Analysis](evidence/07-DNS-Query-Response-Analysis.png)
 
 **Analysis:**
+
 Examines DNS queries and responses, requested domain names, and returned IP addresses.
 
 The investigation includes DNS resolution activity involving connectivity-check.ubuntu.com.
@@ -120,11 +127,12 @@ The investigation includes DNS resolution activity involving connectivity-check.
 
 ### 8. LLMNR and WPAD Queries
 
-**Evidence:** `08-LLMNR-WPAD-Queries.png`
+**Evidence:** `evidence/08-LLMNR-WPAD-Queries.png`
 
-![LLMNR WPAD Queries](08-LLMNR-WPAD-Queries.png)
+![LLMNR WPAD Queries](evidence/08-LLMNR-WPAD-Queries.png)
 
 **Analysis:**
+
 Examines LLMNR name-resolution requests and WPAD-related network traffic.
 
 The captured packets show WPAD name-resolution requests using LLMNR.
@@ -180,7 +188,7 @@ Network indicators must always be evaluated in context. An unusual packet or req
 **Platform:** TryHackMe  
 **Primary Tool:** Wireshark  
 **Environment:** Hands-on cybersecurity training lab  
-**Evidence:** Eight selected investigation screenshots
+**Evidence:** Eight selected investigation screenshots stored in the `evidence/` directory.
 
 All activities were conducted for educational purposes.
 
